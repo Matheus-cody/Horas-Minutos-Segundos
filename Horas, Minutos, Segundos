@@ -1,0 +1,31 @@
+package  Atividade;
+
+
+import java.util.*;
+
+
+public class Atividade {
+    public static void main(String[] args) {
+    
+    Scanner sc = new Scanner (System.in);
+    
+    int horas,minutos,segundos,totalSegundos;
+  
+  System.out.println("Digite as horas atual");
+  horas = sc.nextInt();
+  
+  
+  System.out.println("Digite os minutos atual");
+  minutos = sc.nextInt();
+  
+  System.out.println("Digite os segundos atual");
+  segundos = sc.nextInt();
+  
+  
+  totalSegundos = (horas * 3600) + (minutos * 60) + segundos;
+  
+  System.out.printf("Já se passaram %d segundos", totalSegundos);
+  
+  sc.close();
+  }
+						}
